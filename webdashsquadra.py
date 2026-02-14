@@ -49,7 +49,7 @@ LOGO_PATH = os.path.join(BASE_DIR, "assets", "FSquadra.png")
 # =========================
 SHEET_URL = "https://docs.google.com/spreadsheets/d/1Lpzq0tVhO3yNdj2a__pJZFgt6OVbBNB0xpPiPfec62I/edit?usp=sharing"
 SHEET_ID  = "1Lpzq0tVhO3yNdj2a__pJZFgt6OVbBNB0xpPiPfec62I"
-CSV_URL   = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv"
+CSV_URL   = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/gviz/tq?tqx=out:csv"
 
 # =========================
 # CSS (KPIs)
@@ -426,3 +426,4 @@ with c4:
     estilizar_grafico(fig_dept)
     st.plotly_chart(fig_dept, use_container_width=True, config=PLOTLY_CONFIG)
     st.markdown("</div>", unsafe_allow_html=True)
+
